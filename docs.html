@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="woonote">
+    <meta name="author" content="Webpixels">
+    <title>WooNote docs</title>
+    <script>
+        window.addEventListener("load", function() {
+            setTimeout(function() {
+                document.querySelector('body').classList.add('loaded');
+            }, 300);
+        });
+    </script>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/brand/favicon.png" type="image/png">
+    <!-- Quick CSS -->
+    <link rel="stylesheet" href="assets/css/quick-website.css" id="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html">
+                <img alt="Image placeholder" src="assets/img/brand/logo.png" id="navbar-logo">
+            </a>
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Collapse -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mt-4 mt-lg-0 ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Overview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="docs.html">Docs</a>
+                    </li>
+                </ul>
+                <!-- Button -->
+                <a class="navbar-btn btn btn-sm btn-primary d-none d-lg-inline-block ml-3" href="">
+                    Download Free
+                </a>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="slice slice-lg pt-lg-6 pb-0 pb-lg-6 bg-section-secondary">
+        <div class="container">
+            <div class="row mb-5 justify-content-center">
+                <div class="col-lg-6">
+                    <h3>Preview</h3>
+                    <p>In order for Woonote to work, we need to briefly explain some basics here. As a reminder, pay attention to the distinction between user identities.</p>
+                    <p><b>Webmaster</b>: Have administrator rights, you can install plugins.</p>
+                    <p><b>User</b>: Users with accounts on WordPress sites, author or above, otherwise you will not have permission to upload images.</p>
+                    
+                    <hr>
+                    
+                    <h3>1.Download</h3>
+                    <p># Download the note software corresponding to your system.</p>
+                    <p># (<b>Only for Webmaster</b>)Download the WordPress plugin. Because it depends on the JWT Auth plugin, you also need to download it together.</p>
+                    <p>Extension link: <a target="_blank" href="https://wordpress.org/plugins/jwt-auth/">JWT Auth</a></p>
+
+                    <hr>
+                    
+                    <h3>2.Install</h3>
+                    <p># Install the note software.</p>
+                    <p># (<b>Only for Webmaster</b>)Install the WordPress plugin(Includes JWT Auth plugin), For details: <br>
+                        <a href="https://wordpress.org/documentation/article/manage-plugins/#upload-via-wordpress-admin" target="_blank" title="install-wp-plugin">https://wordpress.org/documentation/article/manage-plugins/#upload-via-wordpress-admin</a>
+                    </p>
+
+                    <hr>
+
+                    <h3>3.Configurate</h3>
+                    <p># Run note software, Menu>Settings to open the configuration pop-up box, fill in the URL link of your website.</p>
+                    <p>
+                        <img src="assets/img/intro/wn-settings-img.png" alt="woonote-settings" style="width: 400px;max-width: 100%">
+                    </p>
+                    <p># (<b>Only for Webmaster</b>)Login to the website backend, switch to Settings>WooNote page, fill in your AppId and AppKey: 
+                    </p>
+                    <p>
+                        <img src="assets/img/intro/wn-plugin-setup-img.png" alt="woonote-plugin-setup" style="max-width: 100%">
+                    </p>
+                    
+                    <hr>
+
+                    <h3>4.Activate</h3>
+                    <p># After the user login, Menu>Settings to open the configuration pop-up box, click the "Activate" button to activate the account and use it.(<b>Only activated when user login for the first time</b>)</p>
+                    <p>
+                        <img src="assets/img/intro/wn-activate-img.png" alt="woonote-activate" style="width: 400px;max-width: 100%">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="position-relative" id="footer-main">
+        <div class="footer pt-lg-7 footer-dark bg-dark">
+            <!-- Footer -->
+            <div class="container pt-4">
+                <hr class="divider divider-fade divider-dark my-4">
+                <div class="row align-items-center justify-content-md-between pb-4">
+                    <div class="col-md-6">
+                        <div class="copyright text-sm font-weight-bold text-center text-md-left">
+                            &copy; 2024 <a href="https://woonote.github.io" class="font-weight-bold" target="_blank">WooNote</a>. All rights reserved
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="nav justify-content-center justify-content-md-end mt-3 mt-md-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Terms
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Privacy
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Cookies
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Core JS  -->
+    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Quick JS -->
+    <script src="assets/js/quick-website.js"></script>
+
+</body>
+
+</html>
